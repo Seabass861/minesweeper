@@ -1,0 +1,104 @@
+body {
+  padding: 20px;
+  background-color: #efefef;
+}
+
+.minesweeper-container {
+  border: 1px solid #333;
+  width: 600px;
+  height: 669px;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 2px #ccc;
+  -moz-box-shadow: 0px 0px 10px 2px #ccc;
+  box-shadow: 0px 0px 10px 2px #ccc;
+  background-color: #fff;
+}
+
+.board-header {
+  height: 60px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #333333;
+  display: flex;
+  flex-direction: row;
+}
+
+.flags {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.flags img {
+  width: 40px;
+  position: absolute;
+  top: 7px;
+}
+
+.reset { 
+  width: 200px; 
+  
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  
+}
+
+.reset img {
+  width: 30px;
+  margin-top: 9px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.timer {
+  width: 200px; 
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 20px;
+  
+}
+.timer img {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+.mine-image {
+    width: 40px;
+    margin-top: 10px;
+}
+
+.clear {clear: both;}
+
+.row { border-bottom: 1px solid #333333 ; box-sizing: border-box; height: 61px;}
+.row:last-child { border-bottom: none;}
+
+.cell {
+  text-align: center;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-right: 1px solid #333333 ;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+.cell:last-child { border-right: none ;}
+
+.cell:hover {
+  background-color: #efefef;
+}
+.cell.open {
+  background-color: #efefef;
+}
+
+
